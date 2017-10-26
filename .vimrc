@@ -15,6 +15,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'mhinz/vim-signify'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'derekwyatt/vim-scala'
 "
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
@@ -76,7 +77,8 @@ au BufNewFile,BufRead *.tex map <F9> : ! pdflatex % <CR>
 au BufNewFile,BufRead *.java map <F9> : ! javac % && java %< <CR>
 
 au BufNewFile,BufRead *.py map <F8> : ! python % <CR>
-au BufNewFile,BufRead *.cc map <F8> : ! g++ -c % -g -Wall -Wextra -Wconversion <CR>
+au BufNewFile,BufRead *.cc map <F8> : ! g++ -c % -g -Wall -Wextra -Wconversion && ./%< <CR>
+au BufNewFile,BufRead *.cpp map <F8> : ! g++ -c % -g -Wall -Wextra -Wconversion && ./%< <CR>
 
 map <F5> : ! lldb %< <CR>
 map <F6> : NERDTreeToggle <CR>
