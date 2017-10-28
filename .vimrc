@@ -16,6 +16,7 @@ Plugin 'mhinz/vim-signify'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'derekwyatt/vim-scala'
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 "
 " " The following are examples of different formats supported.
 " " Keep Plugin commands between vundle#begin/end.
@@ -102,3 +103,6 @@ autocmd Filetype java setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 autocmd Filetype r setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 autocmd Filetype matlab setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+
+"" Folding
+set foldmethod=syntax
